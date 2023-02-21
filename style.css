@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*#ceecef*/
+body {
+    background-color: #e7edea;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 2px solid #fb0c06;
+    margin-bottom: 56px;
+    background-color: #030d4f;
+    color:#ffc52c;
+    position: static;
+    z-index: 1;
+}
+
+.submenu {
+    display: none;
+    background-color: #e7edea;
+    border: 2px solid #fb0c06;
+    position: absolute;
+    left: 0;
+    width: 140px;
+    top: 100%;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    color:#ffc52c;
+}
+
+.menu li a:hover {
+    background-color:#ffc52c;
+    color: #030d4f;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu li:hover {
+    display: block;
+    border-color:#e7edea;
+    cursor: pointer;
+    background-color:#ffc52c;
+    color: #030d4f;
+}
+
+.clear {
+    clear: both;
+}
+
+.submenu li {
+    display: block;
+    padding: 8px;
+    color: #030d4f;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #030d4f;
+}
+
+header button {
+    padding: 5px;
+    background-color: #ffc52c;
+    border: 1px solid #fb0c06;
+    border-radius: 3px;
+    color: #030d4f;
+    margin-left: 5px;
+}
+
+header button:hover {
+    background-color: #e7edea;
+    border-color: #ffc52c;
+    color: #fb0c06;
+}
+
+input {
+    padding: 5px;
+    background-color: #e7edea;
+    border: none;
+    border-radius: 3px;
+}
+
+form {
+    display: flex;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    width: 100%;
+    align-items: center;
+    border-bottom: 2px solid #030d4f;
+    padding-bottom: 30px;
+    margin-bottom: 24px;
+}
+
+#about-us {
+    display: block;
+    padding: 42px;
+    color: #030d4f;
+    border: 2px solid #fb0c06;
+    background-color: #ceecef;
+    width: 40%;
+    text-align: justify;
+    border-radius: 3px;
+}
+
+.about img {
+    width: 40%;
+    margin-right: 10px;
+    border-radius: 3px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.loja {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 10%;
+    margin-bottom: 24px;
+    align-items: flex-start;
+}
+
+article {
+    display: block;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    text-align: justify;
+    background-color: #ceecef;
+    border: 1px solid #fb0c06;
+    border-radius: 3px;
+}
+
+article img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+article button {
+    padding: 5px;
+    background-color: #ffc52c;
+    border: 1px solid #fb0c06;
+    border-radius: 3px;
+    color: #030d4f;
+}
+
+article button:hover {
+    background-color: #030d4f;
+    color: #ffc52c;
+}
+
+footer {
+    padding: 16px;
+    border-top: 2px solid #fb0c06;
+    margin-top: 56px;
+    background-color: #030d4f;
+    color:#ffc52c;
+    position: static;
+    z-index: 1;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container {
+        max-width: 90%;
+        align-items: center;
+        margin: auto;
+    }
+
+    .about {
+        display: block;
+        width: 100%;
+        align-items: center;
+    }
+    
+    #about-us {
+        display: block;
+        padding: 42px;
+        width: 100%;
+    }
+    
+    .about img {
+        width: 100%;
+    }
+
+    .loja {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    article button {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    .loja article {
+        margin-bottom: 24px;
+    }
+
+    header .container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+        align-items: center;
+        margin: auto;
+    }
+
+    .about {
+        display: block;
+        width: 100%;
+        align-items: center;
+    }
+    
+    #about-us {
+        display: block;
+        padding: 42px;
+        width: 100%;
+    }
+    
+    .about img {
+        width: 100%;
+    }
+
+    .loja {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+        row-gap: 2%;
+        margin-bottom: 24px;
+        align-items: flex-start;
+    }
+
+}
